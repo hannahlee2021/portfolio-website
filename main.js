@@ -25,6 +25,11 @@ const engVer = document.getElementById('engVer');
 const bio = document.getElementById('bio');
 const trail = document.getElementById('trail');
 const rocket = document.getElementById('rocket');
+const web = document.getElementById('web');
+const p5js = document.getElementById('p5js');
+const graphic = document.getElementById('graphic');
+const misc = document.getElementById('misc');
+const contact = document.getElementById('contact');
 
 // const contents = document.querySelectorAll('.title');
 
@@ -38,6 +43,12 @@ engVer.style.display="none";
 bio.style.display="none";
 trail.style.display = "none";
 rocket.style.display = "none";
+
+web.style.display = "none";
+p5js.style.display = "none";
+graphic.style.display = "none";
+misc.style.display = "none";
+contact.style.display = "none";
 
 
 
@@ -59,12 +70,24 @@ scrollBox.addEventListener("scroll", function() {
         trail.style.display = "block";
         rocket.style.display = "block";
 
+        web.style.display = "block";
+        p5js.style.display = "block";
+        graphic.style.display = "block";
+        misc.style.display = "block";
+        contact.style.display = "block";
+
     } else if (scrollBox.scrollTop < prevScrollPos) {
         annyeong.style.display = "none";
         engVer.style.display = "none";
         bio.style.display = "none";
         trail.style.display = "none";
         rocket.style.display = "none";
+
+        web.style.display = "none";
+        p5js.style.display = "none";
+        graphic.style.display = "none";
+        misc.style.display = "none";
+        contact.style.display = "none";
         
       
         
