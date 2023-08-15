@@ -21,6 +21,10 @@ let elements = document.querySelectorAll('#welcome, #two, #my, #playground');
 let index = 0;
 const scrollBox = document.getElementById('content-box');
 const annyeong = document.getElementById('annyeong');
+const engVer = document.getElementById('engVer');
+const bio = document.getElementById('bio');
+const trail = document.getElementById('trail');
+const rocket = document.getElementById('rocket');
 
 // const contents = document.querySelectorAll('.title');
 
@@ -30,6 +34,10 @@ let prevScrollPos = scrollBox.scrollTop;
 //     element.style.display("block");
 // })
 annyeong.style.display="none";
+engVer.style.display="none";
+bio.style.display="none";
+trail.style.display = "none";
+rocket.style.display = "none";
 
 
 
@@ -46,9 +54,18 @@ scrollBox.addEventListener("scroll", function() {
     if (scrollBox.scrollTop + scrollBox.offsetHeight === scrollBox.scrollHeight) {
         
         annyeong.style.display = "block";
+        engVer.style.display = "block";
+        bio.style.display = "block";
+        trail.style.display = "block";
+        rocket.style.display = "block";
 
     } else if (scrollBox.scrollTop < prevScrollPos) {
         annyeong.style.display = "none";
+        engVer.style.display = "none";
+        bio.style.display = "none";
+        trail.style.display = "none";
+        rocket.style.display = "none";
+        
       
         
     }
@@ -75,4 +92,14 @@ function showElements() {
       element.style.display = 'none';
     });
   }
+}
+
+function showHoverDetails() {
+  // Show the hover details
+  document.getElementById("hover-details").style.display = "block";
+}
+
+function hideHoverDetails() {
+  // Hide the hover details
+  document.getElementById("hover-details").style.display = "none";
 }

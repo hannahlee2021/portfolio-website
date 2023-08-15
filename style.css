@@ -25,6 +25,7 @@ body {
     padding-left: 10px;
 }
 
+
 hr {
     border: 1px solid #0D08F4;
     width: 80%;
@@ -46,7 +47,7 @@ hr {
     height: 1000px;
 }
 
-img {
+#selfie {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -54,6 +55,20 @@ img {
     border-radius: 50%;
     border: 1px solid #0D08F4;
     
+}
+
+@media screen and (max-width: 425px) {
+    #selfie {
+        width: 275px;
+        height:300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #selfie {
+        width: 200px;
+        height: 215px;
+    }
 }
 
 h1 {
@@ -69,6 +84,29 @@ h1 {
     text-shadow: -1px 8px 13px #0D08F4;
 }
 
+h2 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 200;
+    line-height: normal;
+    font-style: normal;
+}
+
+h4 {
+    /* font-family: 'IBM Plex Mono', sans-serif; */
+    font-weight: 700;
+    line-height: normal;
+   
+
+    
+}
+
 
 
 #welcome {
@@ -81,6 +119,25 @@ h1 {
     display: none;
 }
 
+@media screen and (max-width: 425px){
+    #welcome {
+        font-size: 35px;
+        margin-left: -200px;
+        margin-right: auto;
+        margin-top: -350px;
+        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #welcome {
+        font-size: 25px;
+        margin-left: -150px;
+        margin-right: auto;
+        margin-top: -270px;
+    }
+}
+
 #two {
 
     margin-left: -500px;
@@ -89,6 +146,24 @@ h1 {
 
     font-size: 200px;
     display: none;
+}
+
+@media screen and (max-width: 425px) {
+    #two {
+        font-size: 70px;
+        margin-left: -260px;
+        margin-right: auto;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #two {
+        font-size: 50px;
+        margin-left: -200px;
+        margin-right: auto;
+        margin-top: -70px;
+    }
 }
 
 #my {
@@ -100,6 +175,25 @@ h1 {
     font-size: 70px;
     display: none;
 }
+
+@media screen and (max-width: 425px) {
+    #my {
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: -265px;
+        margin-top: -180px;
+        }
+    }
+
+@media screen and (max-width: 320px) {
+    #my {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: -200px;
+        margin-top: -160px;
+    }
+}
+
 
 #playground {
 
@@ -121,10 +215,168 @@ h1 {
     margin-top: -380px;
 
     font-size: 130px;
-
- 
     
 }
+
+@media screen and (max-width: 425px){
+    #annyeong {
+        left: -120px;
+        margin-top: -500px;
+        font-size:90px;
+    }
+    
+}
+
+#engVer {
+display: flex;
+position: absolute;
+
+left: 215px;
+top: 450px;
+flex-direction: column;
+flex-shrink: 0;
+
+font-size: 25px;
+color: #EB1414;
+}
+
+/* 425px = mobile size L 
+   390px = mobile size M
+   325px = mobile size S */
+
+
+@media screen and (max-width: 425px) { 
+    #engVer {
+        left: 87px;
+        top: 324px;
+    }
+}
+
+.bio-container {
+    position: absolute;
+    left: 200px;
+    top: 495px;
+    max-width: 750px;
+    min-height: 400px;
+
+}
+
+@media screen and (max-width: 425px) {
+    .bio-container {
+        left: 80px;
+        top: 370px;
+        
+    }
+    
+}
+
+@media screen and  (max-width: 390px) {
+    .bio-container {
+        left: 83px;
+        top: 380px;
+        max-width: 250px;
+        min-height: 500px;
+        
+    }
+    
+}
+
+#bio {
+    display: flex;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    #bio {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 390px) {
+    #bio {
+        font-size: 20px;
+    }
+}
+
+#trail {
+    position: absolute;
+    left: 495px;
+    top: 420px;
+    border: none;
+}
+
+@media screen and (max-width: 425px) {
+    #trail {
+        display: none;
+    }
+}
+
+#rocket {
+    position: absolute;
+    left: 795px;
+    top: 340px;
+    border: none;
+}
+
+@media screen and (max-width: 425px) {
+    #rocket {
+        display: none;
+    }
+}
+
+#hover-rocket {
+    position: absolute;
+    left: 795px;
+    top: 340px;
+   
+   
+
+}
+
+
+
+#to-the {
+    position: absolute;
+    /* display: none; */
+    left: 860px;
+    top: 300px;
+    border: none;
+
+  
+    font-size: 20px;
+    word-spacing: 2px;
+    
+
+   
+}
+
+#moon {
+    position: absolute;
+    
+    left: 860px;
+    top: 320px;
+    border: none;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.45), -2px 0px 0px rgba(0, 0, 0, 0.45);
+
+    
+}
+
+/* #rocket:hover + #takeoff  {
+    display: block;
+} */
+
+/* #rocket:hover + #takeoff {
+    opacity: 1;
+  }
+  
+  #rocket:hover + #hover-rocket {
+    opacity: 1;
+  } */
+
 
 
 #show-elements {
