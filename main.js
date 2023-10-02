@@ -30,6 +30,8 @@ const p5js = document.getElementById('p5js');
 const graphic = document.getElementById('graphic');
 const misc = document.getElementById('misc');
 const contact = document.getElementById('contact');
+// const button = document.getElementById('imageButton');
+// const sidebar = document.getElementById('sidebar');
 
 // const contents = document.querySelectorAll('.title');
 
@@ -49,6 +51,9 @@ p5js.style.display = "none";
 graphic.style.display = "none";
 misc.style.display = "none";
 contact.style.display = "none";
+
+// button.style.display = "none";
+// sidebar.style.display = "none";
 
 
 
@@ -76,6 +81,9 @@ scrollBox.addEventListener("scroll", function() {
         misc.style.display = "block";
         contact.style.display = "block";
 
+        // button.style.display = "block";
+        // sidebar.style.display = "block";
+
     } else if (scrollBox.scrollTop < prevScrollPos) {
         annyeong.style.display = "none";
         engVer.style.display = "none";
@@ -88,6 +96,9 @@ scrollBox.addEventListener("scroll", function() {
         graphic.style.display = "none";
         misc.style.display = "none";
         contact.style.display = "none";
+
+        // button.style.display = "none";
+        // sidebar.style.display = "none";
         
       
         
@@ -126,3 +137,11 @@ function hideHoverDetails() {
   // Hide the hover details
   document.getElementById("hover-details").style.display = "none";
 }
+document.querySelectorAll('a[href="'+document.URL+'"]').forEach(link => link.className += ' current-link');
+
+const imageButton = document.getElementById('imageButton');
+const sidebar = document.getElementById('sidebar');
+
+imageButton.addEventListener('click', function() {
+  sidebar.classList.toggle('open');
+});

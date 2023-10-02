@@ -26,6 +26,9 @@ body {
     padding-top: 50px;
     padding-left: 10px;
 }
+.current-link {
+    color:#baada7;
+}
 
 
 hr {
@@ -60,6 +63,7 @@ hr {
     margin-top: -220px;
     border-radius: 50%;
     border: 1px solid #0D08F4;
+    
     
 }
 
@@ -513,18 +517,47 @@ a:active {
     }
 }
 
-.hana-logo {
+/* .hana-logo {
     position: absolute;
     
     left: 1180px;
     top: 160px;
+} */
+li {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 200;
+    line-height: 200%;
+    font-style: normal;
 }
-
 .nav_list {
     display: flex;
     column-gap: 70px;
 
 }
+
+button {
+    all: unset;
+    position: absolute;
+    left: 1210px;
+    top: 100px;
+  }
+  
+  button:focus {
+    outline: revert;
+  }
+
+#sidebar {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  
+  #sidebar.open {
+    position: absolute;
+    width: 200px;
+    left: 1190px;
+    top: 190px;
+  }
 
 #soooo {
     position: absolute;

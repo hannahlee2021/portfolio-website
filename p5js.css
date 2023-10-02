@@ -201,7 +201,12 @@ a:active {
     }
 }
 
-
+li {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 200;
+    line-height: 200%;
+    font-style: normal;
+}
 
 
 .nav_list {
@@ -222,3 +227,27 @@ a:active {
     left: 1230px;
     top: 90px;
 }
+
+button {
+    all: unset;
+    position: absolute;
+    left: 1180px;
+    top: 120px;
+  }
+  
+  button:focus {
+    outline: revert;
+  }
+
+#sidebar {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  
+  #sidebar.open {
+    position: absolute;
+    width: 200px;
+    left: 1150px;
+    top: 200px;
+  }
