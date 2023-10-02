@@ -1,0 +1,224 @@
+body {
+    margin:0;
+    padding:0;
+    position: relative;
+    height: 200vh;
+    overflow:hidden;
+}
+.horizontal-top {
+    
+    top: 0;
+    border: none;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.horizontal-bottom {
+    border: none;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+h1 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    
+    font-weight: 600;
+    
+    line-height: 125px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: -1px 8px 13px #0D08F4;
+}
+
+h2 {
+    /* font-family: 'IBM Plex Mono', sans-serif; */
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 200;
+    line-height: 200%;
+    font-style: normal;
+}
+h4 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 400;
+    line-height: 200%;
+    font-style: normal;
+}
+
+
+h5 {
+    /* font-family: 'IBM Plex Mono', sans-serif; */
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+hr {
+    border: 1px solid #0D08F4;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-top: 150px;
+    
+
+}
+.container-1 {
+    display: flex;
+    flex-wrap: no-wrap;
+    padding-left: 170px;
+    gap: 20px;
+}
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 170px;
+    padding-top: 20px;
+    gap: 20px;
+    
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    padding-left: 170px;
+    padding-top: 20px;
+    gap: 20px;
+}
+.box-1 {
+    /* width: 440px;
+    height: 170px; */
+    height: 132.28px;
+    width: 448.825px;
+    background-color: none;
+    border: 1px solid #000;
+    
+
+}
+.box-2 {
+    height: 132.28px;
+    width: 448.825px;
+    background-color: none;
+    border: 1px solid #000;
+    
+}
+.box-3 {
+    height: 107.434px;
+    width: 448.825px;
+    background-color: none;
+    border: 1px solid #000;
+    
+}
+.box-4 {
+    height: 107.434px;
+    width: 448.825px;
+    background-color: none;
+    border: 1px solid #000;
+}
+.box-5 {
+    height: 181.118px;
+    width: 496.798px;
+    background-color: none;
+    border: 1px solid #000;
+    
+}
+.box-6 {
+
+    height: 181.118px;
+    width: 257.302px;
+    background-color: none;
+    border: 1px solid #000;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none; 
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: black; }
+
+
+a:hover { 
+    color: #0D08F4; }
+
+
+a:active { 
+    text-decoration: none;
+    color: #0D08F4;}
+
+
+
+
+.header_container {
+
+    /* position: relative;
+    max-width: 800px; */
+
+    /* padding-left: 500px;
+    padding-top: 100px; */
+    
+    
+    /* margin-left: 200px; */
+    /* margin-right: auto; */
+    /* margin-top: 200px; */
+    
+   
+    /* display: flex; */
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    /* margin: 0 auto; */
+    left: 100px; 
+    top: 120px;
+    
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 425px) {
+    .header_container  {
+        display: none;
+    }
+}
+
+
+
+
+.nav_list {
+    display: flex;
+    column-gap: 70px;
+
+}
+
+.arrow {
+    position: absolute;
+    left: 1050px;
+    top: 600px;
+}
+
+.hana-logo {
+    position: absolute;
+    
+    left: 1230px;
+    top: 90px;
+}
