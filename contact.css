@@ -15,7 +15,7 @@ body {
 
 .horizontal-bottom {
     border: none;
-    padding-top: 50px;
+    padding-top: 600px;
     padding-left: 10px;
 }
 h1 {
@@ -53,10 +53,17 @@ h4 {
 
 
 h5 {
-    /* font-family: 'IBM Plex Mono', sans-serif; */
+    font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
     line-height: normal;
     
+}
+
+h6 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: normal;
 }
 
 hr {
@@ -72,12 +79,37 @@ hr {
    
     position: absolute;
     left: 200px;
-    top: 600px;
+    top: 250px;
+    
 }
 
 #card {
     
 }
+
+.socials {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+}
+
+.downloadables-title {
+    color: #0D08F4;
+
+    position: absolute;
+    /* left: 67vh; */
+    left: 700px;
+    top: 300px;
+    
+}
+
+.downloadables-container {
+    position: absolute;
+    left: 720px;
+    top: 376px;
+
+}
+
 
 ul {
     list-style: none;
